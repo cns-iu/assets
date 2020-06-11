@@ -1,2 +1,2 @@
-# vhmooc-assets
-Assets for the Visual Human MOOC
+# assets
+Various assets for CNS use
