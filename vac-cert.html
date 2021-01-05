@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    </head>
+    <body>
+        <style>
+            html, body{
+                padding: 0;
+                margin: 0;
+            }
+            .container{
+                width: 100%;
+                max-width: 792px;
+                height: 100%;
+                max-height: 612px;
+            }
+            .border-outer{
+                position: relative;
+                border-width: 24px;
+                border-style: solid;
+                border-color: #B2B2B2;
+            }
+            .border-inner{
+                border-width: 10px;
+                border-style: solid;
+                border-color: #B2B2B2;
+                margin: 5px;
+            }
+            .content{
+                border-width: 1px;
+                border-style: solid;
+                border-color: #B2B2B2;
+                margin: 2px;
+            }
+            .content-header img{
+                width: 100%;
+                height: auto;
+            }
+            .content-body{
+                padding: 40px;
+                background-color: #F2F2F2;
+                background-image: url(logo-cns-cutout.svg);
+                background-position: right;
+                background-repeat: no-repeat;
+            }
+            .content-footer{
+                padding: 20px 0;
+            }
+            .blue-text{
+                font-size: 36px;
+                color: #0777BE;
+            }
+            .student-name{
+                font-size: 36px;
+            }
+            .course-name{
+                font-size: 24px;
+            }
+            p{
+                font-family: "Lato", Helvetica, Arial, sans-serif;
+                font-size: 18px;
+                color: #757576;
+                text-align: left;
+                margin: 0;
+            }
+            .logo-cutout{
+                float: right;
+            }
+            .tagline{
+                position: absolute;
+                bottom: -16px;
+                margin: 0 41%;
+                width: 135px;
+            }
+            .signatures {
+                max-width: 80%;
+            }
+        </style>
+        <div id="cns-cert">
+            <div class="container">
+                <div class="border-outer">
+                    <div class="border-inner">
+
+                            <div class="content">
+                                <div class="content-header">
+                                <img src="logo-iu-cert.svg">
+                                </div>
+                                <div class="content-body">
+                                    <p>This is to certify that<br>
+                                    <span class="blue-text student-name">{{student_name}}</span><br>
+                                    successfully completed the<br>
+                                    <span class="blue-text course-name">{{award_name}}</span><br>
+                                    a course that teaches essential skills for understanding and creating data visualizations, and has earned 3 CEUs, on {{completion_date}}.
+                                    </p>
+                                </div>
+                                <div class="content-footer">
+                                    <img src="signatures.svg" class="signatures">
+                                </div>
+                            </div>
+
+                    </div>
+                    <img src="iu-tagline.svg" class="tagline">
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
